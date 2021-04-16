@@ -1,0 +1,108 @@
+body,
+html {
+  height: 100%;
+}
+
+span {
+  background: white !important;
+}
+
+h1 {
+  font-family: "Montserrat";
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  font-family: "Montserrat";
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-family: "Montserrat";
+  text-align: center;
+  color: white;
+}
+
+.s1 {
+  background: url("../images/image1.jpg");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.s1 h1 {
+  text-align: left;
+  margin-left: 2em;
+  font-size: 2em;
+}
+
+.s1 h2 {
+  text-align: left;
+  margin-left: 2em;
+  font-size: 2em;
+}
+
+.s1 p {
+  text-align: left;
+  margin-left: 2em;
+  font-size: 2em;
+}
+
+.s2 {
+  background: url("../images/image2.jpg");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.s2 h1 {
+  text-align: left;
+  margin-left: 2em;
+  font-size: 2em;
+}
+
+.s2 h2 {
+  text-align: left;
+  margin-left: 2em;
+  font-size: 2em;
+}
+
+.s2 p {
+  text-align: left;
+  margin-left: 2em;
+  font-size: 2em;
+}
+
+.s3 {
+  background: url("../images/image3.jpg");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.s3 h1 {
+  text-align: left;
+  margin-left: 2em;
+  font-size: 2em;
+}
+
+.s3 h2 {
+  text-align: left;
+  margin-left: 2em;
+  font-size: 2em;
+}
+
+.s3 p {
+  text-align: left;
+  margin-left: 2em;
+  font-size: 2em;
+}
+/*# sourceMappingURL=main.css.map */
