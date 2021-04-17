@@ -10,9 +10,9 @@ var canvas = document.querySelector("#scene"),
   particles = [],
   amount = 0,
   mouse = {x:0,y:0},
-  radius = 0.1;
+  radius = 1;
 
-var colors = ["#ffffff","#ffffff", "#ffffff","#ffffff", "#ffffff"];
+var colors = ["#000000","#000000", "#000000","#000000", "#000000"];
 //var colors = ["#468966","#FFF0A5", "#FFB03B","#B64926", "#8E2800"];
 
 var ww = canvas.width = window.innerWidth;
@@ -25,7 +25,7 @@ function Particle(x,y){
     x : x,
     y: y
   };
-  this.r =  Math.random()*5 + 0.1;
+  this.r =  Math.random()*5 + 4;
   this.vx = (Math.random()-0.5)*20;
   this.vy = (Math.random()-0.5)*20;
   this.accX = 0;
