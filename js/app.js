@@ -12,7 +12,8 @@ var canvas = document.querySelector("#scene"),
   mouse = {x:0,y:0},
   radius = 1;
 
-var colors = ["#000000","#000000", "#000000","#000000", "#000000"];
+var colors = ["#ff0090","#e00ee0", "#a400ff"];
+// var colors = ["#000000","#000000", "#000000","#000000", "#000000"];
 //var colors = ["#468966","#FFF0A5", "#FFB03B","#B64926", "#8E2800"];
 
 var ww = canvas.width = window.innerWidth;
@@ -91,7 +92,7 @@ function initScene(){
 
   ctx.font = "bold "+(ww/10)+"px sans-serif";
   ctx.textAlign = "center";
-  ctx.fillText("I Love You", ww/2, wh/2);
+  ctx.fillText("I Love You ♥", ww/2, wh/2);
 
   var data  = ctx.getImageData(0, 0, ww, wh).data;
   ctx.clearRect(0, 0, canvas.width, canvas.height);

@@ -4,14 +4,14 @@
       "value": 30,
       "density": {
         "enable": true,
-        "value_area": 1000
+        "value_area": 600
       }
     },
     "color": {
       "value": "#000000"
     },
     "shape": {
-      "type": ["circle", "polygon", "star"],
+      "type": "circle",
       "stroke": {
         "width": 2,
         "color": "#b3b3b3"
