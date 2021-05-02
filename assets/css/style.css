@@ -90,4 +90,12 @@ p.desc {
 .carousel-indicators .active {
   background-color: #265b54;
 }
+
+#slide {
+  width: auto;
+  height: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
 /*# sourceMappingURL=style.css.map */
