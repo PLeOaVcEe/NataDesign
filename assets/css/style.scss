@@ -1,10 +1,89 @@
 body {
   background-image: url("../image/BG.png");
   font-family: "Montserrat";
+  padding: 0;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #26554a; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #26554a; /* creates padding around scroll thumb */
+}
+
+#slide::-webkit-scrollbar {
+  height: 9px;
+}
+
+#slide::-webkit-scrollbar-track {
+  background: none;
+}
+
+#slide::-webkit-scrollbar-thumb:horizontal {
+  background-color: #26554a; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #26554a; /* creates padding around scroll thumb */
+}
+
+#main {
+  background: #fff;
+  opacity: 50%;
+  z-index: -1;
+}
+
+/* Pattern styles */
+.container-heroes {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-column-gap: 190px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-heroes2 {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-column-gap: 295px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1400px) {
+  .container-heroes {
+    grid-column-gap: 1%;
+  }
+
+  .container-heroes2 {
+    grid-column-gap: 8.2%;
+  }
+}
+
+.left-half {
+  grid-column: 1;
+}
+
+.right-half {
+  grid-column: 2;
+  background-image: url("../image/bg-heroes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar {
   background: none;
+}
+
+#navbar {
   border-bottom: 1px solid #26554a;
 }
 
@@ -53,11 +132,11 @@ p.desc {
 }
 
 .bg-heroes {
-  background-image: url(../image/asset-1.png);
-  background-position: center; /* Center the image */
+  background-image: url(../image/asset-2.png);
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  height: 357px;
+  height: 400px;
+  text-align: center;
   align-items: center;
 }
 
@@ -68,6 +147,10 @@ p.desc {
 
 .card-background-none {
   background: none;
+  border-width: 1px;
+  border-radius: 0%;
+  border-top: none;
+  border-color: #707070;
 }
 
 .card-background-primary {
@@ -84,6 +167,14 @@ p.desc {
 }
 .carousel-indicators .active {
   background-color: #265b54;
+}
+
+p.big {
+  line-height: 2.4;
+}
+
+.text-primary-color {
+  color: #26554a;
 }
 
 #slide {
