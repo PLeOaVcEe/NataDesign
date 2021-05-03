@@ -102,7 +102,7 @@ body::-webkit-scrollbar-thumb {
   background: none;
 }
 
-#navbar {
+#navbar-container {
   border-bottom: 1px solid #26554a;
 }
 
