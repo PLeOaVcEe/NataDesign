@@ -1,12 +1,9 @@
-$(document).scroll(function(){
-  var navbar = $('#navbar');
-  if($(document).scrollTop() > 86){
-    navbar.removeClass('fixed-top');
-  }
-  else
-  {
-    navbar.addClass(' fixed-top');
-  }
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("#scroll").on('click', function() {
+    $('html, body').animate({
+        scrollTop: $('#start-project').offset().top
+      }, 1600);
 });
 
 // Open the Modal
@@ -49,4 +46,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
