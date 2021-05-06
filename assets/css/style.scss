@@ -365,6 +365,11 @@ img.hover-shadow {
   }
   #txt-heroes {
     position: absolute;
+    left: 3%;
+  }
+  div.image-slider {
+    position: relative;
+    left: 3%;
   }
   .content-primary {
     background-image: url("../image/bg-heroes.png");
@@ -394,14 +399,16 @@ img.hover-shadow {
   }
   #txt-heroes {
     position: absolute;
+    left: 3%;
   }
   .content-primary {
     background-image: url("../image/bg-heroes.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
   }
   div.image-slider {
     position: relative;
+    left: 3%;
   }
   .bg-heroes {
     background-position-x: center;
