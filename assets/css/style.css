@@ -3,25 +3,7 @@ body {
   font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
-}
-
-#wrapper {
-  position: relative;
-  z-index: 1;
-}
-
-#vanish {
-  position: relative;
-  float: right;
-  right: 0;
-  top: 0;
-  z-index: -100;
-}
-
-#info {
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
+  overflow-x: hidden;
 }
 
 .montserrat {
@@ -64,37 +46,6 @@ body::-webkit-scrollbar-thumb {
   /* creates padding around scroll thumb */
 }
 
-#main {
-  position: relative;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#main::before {
-  content: "";
-  background: #fff;
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 50%;
-}
-
-#main .container {
-  position: relative;
-  color: #26554a;
-}
-
 .card {
   background: none;
   border-width: 1px;
@@ -102,69 +53,11 @@ body::-webkit-scrollbar-thumb {
   border-radius: 0px;
 }
 
-/* Pattern styles */
-.container-heroes {
-  display: -ms-grid;
-  display: grid;
+.card-footer {
   padding: 0;
-  margin: 0;
-  grid-column-gap: 190px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container-heroes2 {
-  display: -ms-grid;
-  display: grid;
-  padding: 0;
-  margin: 0;
-  grid-column-gap: 295px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 1920px) {
-  #wrapper {
-    height: 1072px;
-  }
-  #vanish {
-    display: block;
-  }
-}
-
-@media (max-width: 1367px) {
-  #wrapper {
-    height: 762px;
-  }
-  #vanish {
-    display: block;
-  }
-}
-
-@media (max-width: 1024px) {
-  #wrapper {
-    height: 823px;
-  }
-  #vanish {
-    display: block;
-  }
-}
-
-@media (max-width: 768px) {
-  #wrapper {
-    height: 900px;
-  }
-  #vanish {
-    display: none;
-  }
+  border-width: 0;
+  background: none;
+  margin-bottom: 20px;
 }
 
 .left-half {
@@ -184,6 +77,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 #navbar-container {
+  border-bottom: 1px solid #fff;
+}
+
+#navbar-container2 {
   border-bottom: 1px solid #26554a;
 }
 
@@ -215,8 +112,33 @@ p.desc {
   border-radius: 0;
 }
 
+.btn-secondary {
+  color: #fff;
+  background-color: #d1b599;
+  border-color: #d1b599;
+  border-radius: 0;
+}
+
 .bg-primary-color {
   background-color: #26554a;
+  color: #fff;
+  font-weight: bold;
+}
+
+.bg-secondary-color {
+  background-color: #d1b599;
+  color: #fff;
+  font-weight: bold;
+}
+
+.bg-secondary-color-50 {
+  background-color: #af9a86;
+  color: #fff;
+  font-weight: bold;
+}
+
+.bg-secondary-color-25 {
+  background-color: #978675;
   color: #fff;
   font-weight: bold;
 }
@@ -234,7 +156,7 @@ p.desc {
 }
 
 .navbar-toggler-icon {
-  color: #26554a;
+  color: #fff;
 }
 
 .bg-heroes {
@@ -250,7 +172,7 @@ p.desc {
 }
 
 .footer {
-  font-size: 0.9em;
+  font-size: 14px;
   color: #fff;
 }
 
@@ -268,7 +190,14 @@ p.desc {
 
 .content-white {
   background-color: #fff;
-  z-index: 1;
+}
+
+.content-primary {
+  background-color: #26554a;
+}
+
+.content-primary2 {
+  background-color: #26554a;
 }
 
 .carousel-indicators button {
@@ -293,6 +222,10 @@ p.big {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+}
+
+#main {
+  color: #26554a;
 }
 
 /* Create four equal columns that floats next to eachother */
@@ -414,5 +347,47 @@ img.hover-shadow {
 .hover-shadow:hover {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#footer2 {
+  display: none;
+}
+
+#options2 {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  #img-heroes {
+    opacity: 0;
+  }
+  #txt-heroes {
+    position: absolute;
+    left: 40px;
+  }
+  .content-primary {
+    background-image: url("../image/bg-heroes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  div.image-slider {
+    position: relative;
+    left: 40px;
+  }
+  .bg-heroes {
+    background-position-x: center;
+  }
+  #footer2 {
+    display: block;
+  }
+  #footer1 {
+    display: none;
+  }
+  #options {
+    display: none;
+  }
+  #options2 {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

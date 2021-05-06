@@ -19,14 +19,13 @@
 </head>
 
 <body>
-
-    <div class="container-fluid content-white">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg" id="navbar">
-                <div class="container" id="navbar-container">
+    <div class="container-fluid pt-3">
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-lg p-0" id="navbar">
+                <div class="container p-0" id="navbar-container2">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/image/Logo.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="78"
-                            height="139" loading="lazy">
+                        <img src="assets/image/Logo2.png" class="d-block mx-lg-auto img-fluid py-3 ps-3"
+                            alt="Bootstrap Themes" width="56" height="52" loading="lazy">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,9 +52,9 @@
     </div>
 
     <main>
-        <div class="container-fluid content-white py-5">
+        <div class="container-fluid py-5">
             <div class="container">
-                <h1 class="display-4 fw-bold lh-1 mb-3 thick">Portofolio</h1>
+                <h1 class="display-4 fw-bold lh-1 mb-5 thick">Portofolio</h1>
                 <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3">
                     <div class="col mb-4">
                         <img src="assets/image/port1.png" onclick="openModal();currentSlide(1)"
@@ -196,25 +195,42 @@
     </div>
     </div>
 
-    <footer class="footer mt-auto p-5 bg-primary-color align-items-center">
+    <footer class="footer mt-auto p-5 bg-primary-color align-items-center" id="footer1">
         <div class="container">
-            <div class="row">
-                <div class="col-4">
+            <div class="d-flex flex-row flex-wrap p-2 bd-highlight text-center">
+                <div class="p-2 flex-fill bd-highlight text-start">
                     <p class="footer">0812 3456 7890</p>
                     <p class="footer">nat.adesign@gmail.com</p>
                     <p class="footer">Jl. Kol. Yusudarso No. 30F, Medan</p>
                 </div>
-                <div class="col-4">
+                <div class="p-2 flex-fill bd-highlight text-start">
                     <p class="footer mb-4">FOLLOW US</p>
-                    <div class="col">
-                        <i class="fab fa-facebook-f fa-2x"></i>
-                        <i class="fab fa-instagram fa-2x mx-5"></i>
-                        <i class="fab fa-whatsapp fa-2x"></i>
-                    </div>
+                    <i class="fab fa-facebook-f fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x mx-5"></i>
+                    <i class="fab fa-whatsapp fa-2x"></i>
                 </div>
-                <div class="col-4 text-end">
-                    <br>
-                    <br>
+                <div class="p-2 flex-fill bd-highlight mt-3 text-end me-auto">
+                    <p class="footer">COPYRIGHT © 2021</p>
+                    <p class="footer">NAT.A DESIGN</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer mt-auto p-5 bg-primary-color align-items-center" id="footer2">
+        <div class="container">
+            <div class="d-flex flex-column flex-wrap p-2 bd-highlight text-center">
+                <div class="p-2 flex-fill bd-highlight">
+                    <p class="footer">0812 3456 7890</p>
+                    <p class="footer">nat.adesign@gmail.com</p>
+                    <p class="footer">Jl. Kol. Yusudarso No. 30F, Medan</p>
+                </div>
+                <div class="p-2 flex-fill bd-highlight">
+                    <p class="footer mb-4">FOLLOW US</p>
+                    <i class="fab fa-facebook-f fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x mx-5"></i>
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                </div>
+                <div class="p-2 flex-fill bd-highlight mt-3">
                     <p class="footer">COPYRIGHT © 2021</p>
                     <p class="footer">NAT.A DESIGN</p>
                 </div>
