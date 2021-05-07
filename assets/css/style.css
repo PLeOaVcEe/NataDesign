@@ -373,6 +373,12 @@ img.hover-shadow {
           box-shadow: none;
 }
 
+#sosial {
+  position: absolute;
+  right: -40px;
+  bottom: 60px;
+}
+
 @media only screen and (max-width: 1920px) {
   .image-slider {
     padding-left: 0;
@@ -380,6 +386,34 @@ img.hover-shadow {
   }
   #txt-heroes {
     line-height: 1.6;
+  }
+}
+
+@media only screen and (max-width: 1085px) {
+  #sosial {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #info-project {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #info-project .card-body {
+    text-align: center;
+  }
+  #info-project p {
+    text-align: center;
+  }
+  #info-project .d-flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .information {
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
 
@@ -391,8 +425,11 @@ img.hover-shadow {
     height: 90vh;
     padding-left: 20px;
   }
-  #txt-heroes.thick {
+  #txt-heroes .thick {
     font-size: 32px;
+  }
+  #txt-heroes .desc {
+    font-size: 12px;
   }
   .image-slider {
     padding-left: 20px;
@@ -401,6 +438,11 @@ img.hover-shadow {
     position: relative;
     background: #000;
     z-index: 1;
+  }
+  .content-about {
+    height: 100vh;
+    background-image: url("../image/about.png");
+    background-size: cover;
   }
   .bg {
     position: absolute;
@@ -431,6 +473,24 @@ img.hover-shadow {
   #options2 {
     display: block;
   }
+  .container .info-project {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #navbar-container2 {
+    border-bottom: none;
+  }
+  #navbar-container2 li a.nav-link {
+    color: #ffffff;
+  }
+  #navbar-container2 img {
+    content: url("../image/Logo.png");
+    width: 120px;
+    height: 120px;
+  }
+  .navbar-toggler-icon2 {
+    color: #fff;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -439,6 +499,7 @@ img.hover-shadow {
   }
   #txt-heroes {
     height: 90vh;
+    padding-left: 20px;
   }
   .content-primary {
     background-image: url("../image/bg-heroes.png");

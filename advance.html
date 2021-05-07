@@ -23,6 +23,7 @@
 <body>
     
     <div class="container-fluid p-0 content-primary pt-3">
+        <div class="bg"></div>
         <div class="container p-0">
             <nav class="navbar navbar-expand-lg p-0" id="navbar">
                 <div class="container p-0" id="navbar-container">
@@ -54,15 +55,27 @@
             </nav>
         </div>
         <div class="container p-0">
-            <div class="row flex-lg-row-reverse align-items-center p-0 ms-0">
-                <div class="col-10 col-sm-8 col-lg-6 ps-0 ">
-                    <img id="img-heroes" src="assets/image/bg-heroes2.png" class="mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                        width="700" height="500" loading="lazy">
+            <div class="row flex-lg-row-reverse align-items-center p-0 mx-0">
+                <div class="col-10 col-sm-8 col-lg-6 p-0 mx-0 " style="position: relative;">
+                    <img id="img-heroes" src="assets/image/bg-heroes2.png" class="mx-lg-auto img-fluid"
+                        alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    <div class="row" id="sosial">
+                        <div class="d-flex flex-column text-white">
+                            <div class="py-3">
+                                <i class="fab fa-facebook-f fa-lg"></i>
+                            </div>
+                            <div class="py-3">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </div>
+                            <div class="py-3">
+                                <i class="fab fa-whatsapp fa-lg"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 d-flex flex-column justify-content-center p-0" id="txt-heroes">
-                    <h1 class="display-4 fw-bold lh-1 mb-3 thick text-white"><b>Let us help <br>
-                            building your <br>
-                            dream.</b></h1>
+                <div class="col-lg-6 d-flex flex-column justify-content-center py-0 mx-0" id="txt-heroes">
+                    <h1 class="thick text-white" style="line-height: 1.6;"><b>Let us help<br> building your <br>dream.</b>
+                    </h1>
                 </div>
             </div>
         </div>
@@ -107,13 +120,15 @@
 
     <main id="main">
         <div class="container py-5 px-0">
-            <h1 class="thick">Harga & Detail <br> Pengerjaan</h1>
-            <p class="mt-4">Pilih paket berdasarkan kebutuhan Anda, dengan pilihan 4 pilihan yang tersedia :</p>
-            <div class="row my-5">
+            <div class="information">
+                <h1 class="thick">Harga & Detail <br> Pengerjaan</h1>
+                <p class="mt-4">Pilih paket berdasarkan kebutuhan Anda, dengan pilihan 4 pilihan yang tersedia :</p>
+            </div>
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-xxl-4 my-5 p-0" id="info-project">
                 <div class="col mb-3">
                     <div class="card p-3 h-100">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-start mb-3"><b>Elite+</b></h5>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3"><b>Elite+</b></h5>
                             <div class="d-flex flex-row bd-highlight">
                                 <div class="bd-highlight">
                                     <b>Rp.</b>
@@ -126,21 +141,21 @@
                                 </div>
                             </div>
                             <hr class="my-4">
-                            <p class="text-start">Luas Bangunan: < 25m<sup>2</sup></p>
-                            <p class="text-start">Alternatif Desain : 1 Desain</p>
-                            <p class="text-start">Durasi Pekerjaan : 30 Hari</p>
-                            <p class="text-start">Revisi Desain : 2x s/d batas waktu</p>
-                            <p class="text-start">Moodboard</p>
-                            <p class="text-start">Layout Customer</p>
-                            <p class="text-start">Modeling 3D Render</p>
-                            <p class="text-start">Detail Ukuran 3D</p>
-                            <p class="text-start">Tampak & Potongan</p>
-                            <p class="text-start">Layout Dapur</p>
-                            <p class="text-start">RAB/BOQ</p>
-                            <p class="text-start">List Equitpment & Harga</p>
-                            <p class="text-start">List Furniture & Harga</p>
-                            <p class="text-start">Lapangan Survey & Study</p>
-                            <p class="text-start">Master File Desain</p>
+                            <p >Luas Bangunan: < 25m<sup>2</sup></p>
+                            <p >Alternatif Desain : 1 Desain</p>
+                            <p >Durasi Pekerjaan : 30 Hari</p>
+                            <p >Revisi Desain : 2x s/d batas waktu</p>
+                            <p >Moodboard</p>
+                            <p >Layout Customer</p>
+                            <p >Modeling 3D Render</p>
+                            <p >Detail Ukuran 3D</p>
+                            <p >Tampak & Potongan</p>
+                            <p >Layout Dapur</p>
+                            <p >RAB/BOQ</p>
+                            <p >List Equitpment & Harga</p>
+                            <p >List Furniture & Harga</p>
+                            <p >Lapangan Survey & Study</p>
+                            <p >Master File Desain</p>
                             <br>
                             <a href="https://api.whatsapp.com/send?phone=6282362200442&text=Perkenalkan%20Om%20ganteng%20Dan%20bang%20jago%2C%20nama%20saya%20rio%20wirawan%3Cbr%3Edan%20ini%20baris%20kedua"
                                 target="_blank" class="btn btn-primary px-5"><b>MULAI PROJECT</b></a>
@@ -149,8 +164,8 @@
                 </div>
                 <div class="col mb-3">
                     <div class="card p-3 h-100">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-start mb-3"><b>Pro+</b></h5>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3"><b>Pro+</b></h5>
                             <div class="d-flex flex-row bd-highlight">
                                 <div class="bd-highlight">
                                     <b>Rp.</b>
@@ -163,21 +178,21 @@
                                 </div>
                             </div>
                             <hr class="my-4">
-                            <p class="text-start">Luas Bangunan: 26 s/d 60m<sup>2</sup></p>
-                            <p class="text-start">Alternatif Desain : 1 Desain</p>
-                            <p class="text-start">Durasi Pekerjaan : 30 Hari</p>
-                            <p class="text-start">Revisi Desain : 2x s/d batas waktu</p>
-                            <p class="text-start">Moodboard</p>
-                            <p class="text-start">Layout Customer</p>
-                            <p class="text-start">Modeling 3D Render</p>
-                            <p class="text-start">Detail Ukuran 3D</p>
-                            <p class="text-start">Tampak & Potongan</p>
-                            <p class="text-start">Layout Dapur</p>
-                            <p class="text-start">RAB/BOQ</p>
-                            <p class="text-start">List Equitpment & Harga</p>
-                            <p class="text-start">List Furniture & Harga</p>
-                            <p class="text-start">Lapangan Survey & Study</p>
-                            <p class="text-start">Master File Desain</p>
+                            <p >Luas Bangunan: 26 s/d 60m<sup>2</sup></p>
+                            <p >Alternatif Desain : 1 Desain</p>
+                            <p >Durasi Pekerjaan : 30 Hari</p>
+                            <p >Revisi Desain : 2x s/d batas waktu</p>
+                            <p >Moodboard</p>
+                            <p >Layout Customer</p>
+                            <p >Modeling 3D Render</p>
+                            <p >Detail Ukuran 3D</p>
+                            <p >Tampak & Potongan</p>
+                            <p >Layout Dapur</p>
+                            <p >RAB/BOQ</p>
+                            <p >List Equitpment & Harga</p>
+                            <p >List Furniture & Harga</p>
+                            <p >Lapangan Survey & Study</p>
+                            <p >Master File Desain</p>
                             <br>
                             <a href="https://api.whatsapp.com/send?phone=6282362200442&text=Perkenalkan%20Om%20ganteng%20Dan%20bang%20jago%2C%20nama%20saya%20rio%20wirawan%3Cbr%3Edan%20ini%20baris%20kedua"
                                 target="_blank" class="btn btn-primary px-5"><b>MULAI PROJECT</b></a>
@@ -186,8 +201,8 @@
                 </div>
                 <div class="col mb-3">
                     <div class="card p-3 h-100">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-start mb-3"><b>Master+</b></h5>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3"><b>Master+</b></h5>
                             <div class="d-flex flex-row bd-highlight">
                                 <div class="bd-highlight">
                                     <b>Rp.</b>
@@ -200,21 +215,21 @@
                                 </div>
                             </div>
                             <hr class="my-4">
-                            <p class="text-start">Luas Bangunan: 60 s/d 120m<sup>2</sup></p>
-                            <p class="text-start">Alternatif Desain : 1 Desain</p>
-                            <p class="text-start">Durasi Pekerjaan : 60 Hari</p>
-                            <p class="text-start">Revisi Desain : 2x s/d batas waktu</p>
-                            <p class="text-start">Moodboard</p>
-                            <p class="text-start">Layout Customer</p>
-                            <p class="text-start">Modeling 3D Render</p>
-                            <p class="text-start">Detail Ukuran 3D</p>
-                            <p class="text-start">Tampak & Potongan</p>
-                            <p class="text-start">Layout Dapur</p>
-                            <p class="text-start">RAB/BOQ</p>
-                            <p class="text-start">List Equitpment & Harga</p>
-                            <p class="text-start">List Furniture & Harga</p>
-                            <p class="text-start">Lapangan Survey & Study</p>
-                            <p class="text-start">Master File Desain</p>
+                            <p >Luas Bangunan: 60 s/d 120m<sup>2</sup></p>
+                            <p >Alternatif Desain : 1 Desain</p>
+                            <p >Durasi Pekerjaan : 60 Hari</p>
+                            <p >Revisi Desain : 2x s/d batas waktu</p>
+                            <p >Moodboard</p>
+                            <p >Layout Customer</p>
+                            <p >Modeling 3D Render</p>
+                            <p >Detail Ukuran 3D</p>
+                            <p >Tampak & Potongan</p>
+                            <p >Layout Dapur</p>
+                            <p >RAB/BOQ</p>
+                            <p >List Equitpment & Harga</p>
+                            <p >List Furniture & Harga</p>
+                            <p >Lapangan Survey & Study</p>
+                            <p >Master File Desain</p>
                             <br>
                             <a href="https://api.whatsapp.com/send?phone=6282362200442&text=Perkenalkan%20Om%20ganteng%20Dan%20bang%20jago%2C%20nama%20saya%20rio%20wirawan%3Cbr%3Edan%20ini%20baris%20kedua"
                                 target="_blank" class="btn btn-primary px-5"><b>MULAI PROJECT</b></a>
@@ -223,8 +238,8 @@
                 </div>
                 <div class="col mb-3">
                     <div class="card p-3 h-100">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-start mb-3"><b>Legend+</b></h5>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3"><b>Legend+</b></h5>
                             <div class="d-flex flex-row bd-highlight">
                                 <div class="bd-highlight">
                                     <b>Rp.</b>
@@ -237,21 +252,21 @@
                                 </div>
                             </div>
                             <hr class="my-4">
-                            <p class="text-start">Luas Bangunan: 121 s/d 400m<sup>2</sup></p>
-                            <p class="text-start">Alternatif Desain : 1 Desain</p>
-                            <p class="text-start">Durasi Pekerjaan : 60 Hari</p>
-                            <p class="text-start">Revisi Desain : 2x s/d batas waktu</p>
-                            <p class="text-start">Moodboard</p>
-                            <p class="text-start">Layout Customer</p>
-                            <p class="text-start">Modeling 3D Render</p>
-                            <p class="text-start">Detail Ukuran 3D</p>
-                            <p class="text-start">Tampak & Potongan</p>
-                            <p class="text-start">Layout Dapur</p>
-                            <p class="text-start">RAB/BOQ</p>
-                            <p class="text-start">List Equitpment & Harga</p>
-                            <p class="text-start">List Furniture & Harga</p>
-                            <p class="text-start">Lapangan Survey & Study</p>
-                            <p class="text-start">Master File Desain</p>
+                            <p >Luas Bangunan: 121 s/d 400m<sup>2</sup></p>
+                            <p >Alternatif Desain : 1 Desain</p>
+                            <p >Durasi Pekerjaan : 60 Hari</p>
+                            <p >Revisi Desain : 2x s/d batas waktu</p>
+                            <p >Moodboard</p>
+                            <p >Layout Customer</p>
+                            <p >Modeling 3D Render</p>
+                            <p >Detail Ukuran 3D</p>
+                            <p >Tampak & Potongan</p>
+                            <p >Layout Dapur</p>
+                            <p >RAB/BOQ</p>
+                            <p >List Equitpment & Harga</p>
+                            <p >List Furniture & Harga</p>
+                            <p >Lapangan Survey & Study</p>
+                            <p >Master File Desain</p>
                             <br>
                             <a href="https://api.whatsapp.com/send?phone=6282362200442&text=Perkenalkan%20Om%20ganteng%20Dan%20bang%20jago%2C%20nama%20saya%20rio%20wirawan%3Cbr%3Edan%20ini%20baris%20kedua"
                                 target="_blank" class="btn btn-primary px-5"><b>MULAI PROJECT</b></a>
@@ -259,7 +274,9 @@
                     </div>
                 </div>
             </div>
-            <p class="montserrat"><b><i>Jika Anda kesulitan dalam pemilihan, silahakan hubungi kami untuk konsultasi secara langsung.</i></b></p>
+            <div class="information">
+                <p class="montserrat"><b><i>Jika Anda kesulitan dalam pemilihan, silahakan hubungi kami untuk konsultasi secara langsung.</i></b></p>
+            </div>
         </div>
     </main>
 

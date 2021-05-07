@@ -374,6 +374,12 @@ img.hover-shadow {
   box-shadow: none;
 }
 
+#sosial {
+  position: absolute;
+  right: -40px;
+  bottom: 60px;
+}
+
 @media only screen and (max-width: 1920px) {
   .image-slider {
     padding-left: 0;
@@ -384,25 +390,66 @@ img.hover-shadow {
   }
 }
 
+@media only screen and (max-width: 1085px) {
+  #sosial {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #info-project {
+    margin-right: 0;
+    margin-left: 0;
+    .card-body {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .d-flex {
+      justify-content: center;
+    }
+  }
+  .information {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   #img-heroes {
     display: none;
   }
+
   #txt-heroes {
     height: 90vh;
     padding-left: 20px;
   }
-  #txt-heroes.thick {
+
+  #txt-heroes .thick {
     font-size: 32px;
   }
+
+  #txt-heroes .desc {
+    font-size: 12px;
+  }
+
   .image-slider {
     padding-left: 20px;
   }
+
   .content-primary {
     position: relative;
     background: #000;
     z-index: 1;
   }
+
+  .content-about {
+    height: 100vh;
+    background-image: url("../image/about.png");
+    background-size: cover;
+  }
+
   .bg {
     position: absolute;
     z-index: -1;
@@ -417,20 +464,46 @@ img.hover-shadow {
     width: 100%;
     height: 100%;
   }
+
   .bg-heroes {
     background-position-x: center;
   }
+
   #footer2 {
     display: block;
   }
+
   #footer1 {
     display: none;
   }
+
   #options {
     display: none;
   }
+
   #options2 {
     display: block;
+  }
+
+  .container .info-project {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #navbar-container2 {
+    border-bottom: none;
+    li a.nav-link {
+      color: #ffffff;
+    }
+    img {
+      content: url("../image/Logo.png");
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .navbar-toggler-icon2 {
+    color: #fff;
   }
 }
 
@@ -440,6 +513,7 @@ img.hover-shadow {
   }
   #txt-heroes {
     height: 90vh;
+    padding-left: 20px;
   }
   .content-primary {
     background-image: url("../image/bg-heroes.png");

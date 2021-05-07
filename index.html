@@ -20,8 +20,7 @@
 </head>
 
 <body>
-
-    <div class="container-fluid p-0 content-primary pt-3" id="header">
+    <div class="container-fluid p-0 content-primary pt-3">
         <div class="bg"></div>
         <div class="container p-0">
             <nav class="navbar navbar-expand-lg p-0" id="navbar">
@@ -53,31 +52,44 @@
             </nav>
         </div>
         <div class="container p-0">
-            <div class="row flex-lg-row-reverse align-items-center p-0 mx-0 g-0">
-                <div class="col-10 col-sm-8 col-lg-6 ps-0 mx-0" id="img-heroes">
+            <div class="row flex-lg-row-reverse align-items-center p-0">
+                <div class="col-10 col-sm-8 col-lg-6 ps-0 mx-0" id="img-heroes" style="position: relative;">
                     <img src="assets/image/bg-heroes.png" class="mx-lg-auto img-fluid" alt="Bootstrap Themes"
                         width="700" height="500" loading="lazy">
+                    <div class="row" id="sosial">
+                        <div class="d-flex flex-column text-white">
+                            <div class="py-3">
+                                <i class="fab fa-facebook-f fa-lg"></i>
+                            </div>
+                            <div class="py-3">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </div>
+                            <div class="py-3">
+                                <i class="fab fa-whatsapp fa-lg"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center py-0 mx-0" id="txt-heroes">
-                    <h1 class="mb-3 thick text-white mx-0 p-0">Build Aesthetically.</h1>
+                    <h1 class="mb-3 thick text-white">Build Aesthetically.</h1>
                     <p class="desc text-white">Provides an aesthetic for every building.</p>
                     <div class="d-md-flex justify-content-md-start">
-                        <a id="scroll" href="#start-project" class="btn btn-secondary-heroes px-4 me-md-2 py-3"><b>Mulai
-                                Project</b></a>
+                        <a id="scroll" href="#start-project" class="btn btn-secondary-heroes px-4 me-md-2 py-3"><b>Mulai Project</b></a>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="container">
-            <div class="row info">
-                <div class="col text-center p-5 bg-secondary-color">
-                    <p>Total Restorant & Café Terselesaikan</p>
+            <div class="row text-center">
+                <div class="col p-5 bg-secondary-color d-flex align-items-center justify-content-center">
+                    <p class="m-0">Total Restorant & Café Terselesaikan</p>
                 </div>
-                <div class="col text-center p-5 bg-secondary-color-50">
-                    <p>99 Project</p>
+                <div class="col p-5 bg-secondary-color-25 d-flex align-items-center justify-content-center">
+                    <p class="m-0">99 Project</p>
                 </div>
-                <div class="col text-center p-5 bg-secondary-color-25">
-                    <p>Selengkapnya</p>
+                <div class="col p-5 bg-secondary-color-50 d-flex align-items-center justify-content-center">
+                    <p class="m-0">Selengkapnya</p>
                 </div>
             </div>
         </div>
