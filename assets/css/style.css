@@ -84,6 +84,10 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 1px solid #26554a;
 }
 
+#navbar-container3 {
+  border-bottom: 1px solid #26554a;
+}
+
 .nav-link {
   color: #26554a;
 }
@@ -167,6 +171,10 @@ p.desc {
 }
 
 .navbar-toggler-icon2 {
+  color: #26554a;
+}
+
+.navbar-toggler-icon3 {
   color: #26554a;
 }
 
