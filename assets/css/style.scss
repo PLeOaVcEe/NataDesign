@@ -124,10 +124,17 @@ p.desc {
   border-radius: 0;
 }
 
-.btn-secondary {
+.btn-secondary-heroes {
   color: #fff;
   background-color: #d1b599;
   border-color: #d1b599;
+  border-radius: 0;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #fff1e4;
+  border-color: #fff1e4;
   border-radius: 0;
 }
 
@@ -363,15 +370,23 @@ img.hover-shadow {
   display: none;
 }
 
+@media only screen and (max-width: 1920px) {
+  .image-slider {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   #img-heroes {
     display: none;
   }
   #txt-heroes {
     height: 50vh;
+    padding-left: 20px;
   }
-  div.image-slider {
-    position: relative;
+  .image-slider {
+    padding-left: 20px;
   }
   .content-primary {
     background-image: url("../image/bg-heroes.png");
@@ -397,13 +412,10 @@ img.hover-shadow {
 
 @media only screen and (max-width: 375px) {
   #img-heroes {
-    opacity: 0;
+    display: none;
   }
   #txt-heroes {
-    height: 50vh;
-  }
-  div.image-slider {
-    position: relative;
+    height: 90vh;
   }
   .content-primary {
     background-image: url("../image/bg-heroes.png");
