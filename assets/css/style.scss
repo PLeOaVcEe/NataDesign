@@ -554,6 +554,11 @@ img.hover-shadow {
   text-align: start;
 }
 
+.preview-img {
+  width: 416px;
+  height: auto;
+}
+
 @media only screen and (max-width: 1919.98px) {
   .image-slider {
     padding-left: 0;
@@ -627,6 +632,11 @@ img.hover-shadow {
 @media only screen and (max-width: 767.98px) {
   h1.title {
     font-size: $size30;
+  }
+
+  .preview-img {
+    width: 100%;
+    height: auto;
   }
 
   .content-primary {
