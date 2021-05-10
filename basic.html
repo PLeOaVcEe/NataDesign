@@ -20,14 +20,14 @@
 
 <body>
     
-    <div class="container-fluid p-0 content-primary pt-3">
-        <div class="bg"></div>
-        <div class="container p-0">
+    <div class="container-fluid p-0 content-primary pt-3" id="landing-package">
+        <div class="bg-packages"></div>
+        <div class="container-sm p-0" id="container-sm-navbar">
             <nav class="navbar navbar-expand-lg p-0" id="navbar">
-                <div class="container p-0" id="navbar-container">
+                <div class="container-fluid p-0" id="navbar-container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/image/Logo.png" class="d-block mx-lg-auto img-fluid py-3 ps-3" alt="Bootstrap Themes" width="56"
-                            height="52" loading="lazy">
+                        <img src="assets/image/Logo.png" class="d-block mx-lg-auto img-fluid py-3 ps-3"
+                            alt="Bootstrap Themes" width="56" height="52" loading="lazy">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,76 +52,54 @@
                 </div>
             </nav>
         </div>
-        <div class="container p-0">
-            <div class="row flex-lg-row-reverse align-items-center p-0 mx-0">
-                <div class="col-10 col-sm-8 col-lg-6 p-0 mx-0 " style="position: relative;">
-                    <img id="img-heroes" src="assets/image/bg-heroes2.png" class="mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                        width="700" height="500" loading="lazy">
-                    <div class="row" id="sosial">
-                        <div class="d-flex flex-column text-white">
-                            <div class="py-3">
-                                <i class="fab fa-facebook-f fa-lg"></i>
-                            </div>
-                            <div class="py-3">
-                                <i class="fab fa-instagram fa-lg"></i>
-                            </div>
-                            <div class="py-3">
-                                <i class="fab fa-whatsapp fa-lg"></i>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container p-0" id="heroes-container">
+            <div class="row flex-md-row align-items-center p-0" id="heroes">
+                <div class="col col-lg-6 d-flex flex-column justify-content-center py-0 mx-0" id="txt-heroes-packages">
+                    <h1 class="title play-fair text-white" style="line-height: 1.6;"><b>Let us help<br> building your
+                            <br>dream.</b>
+                    </h1>
                 </div>
-                <div class="col-lg-6 d-flex flex-column justify-content-center py-0 mx-0" id="txt-heroes">
-                    <h1 class="thick text-white" style="line-height: 1.6;"><b>Let us help<br> building your <br>dream.</b></h1>
+                <div class="col-10 col-sm-8 col-md-7 col-lg-6 ps-0 mx-0" id="img-heroes">
+                    <img src="assets/image/bg-heroes2.png" class="mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                        loading="lazy">
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row ">
-                <div class="col-sm text-start p-5 bg-secondary-color">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0">
-                            <img src="assets/image/pilih.png" alt="">
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                            <h3><b>Pilih</b></h3>
-                            <p>Pelajari Pilihan Anda dan pilih berdasarkan kebutuhan Anda.</p>
-                        </div>
+        <div class="container" id="packages-info">
+            <div class="row row-cols-md-3 text-center text-white">
+                <div class="col py-4 px-3 bg-secondary-color d-flex align-items-center justify-content-center">
+                    <div class="flex-grow-0 ms-3">
+                        <h3 class="h-3 montserrat font-size-18"><b>Pilih</b></h3>
+                        <p class="p-packages montserrat font-size-15">Pelajari Pilihan Anda dan pilih berdasarkan kebutuhan
+                            Anda.</p>
                     </div>
                 </div>
-                <div class="col-sm text-start p-5 bg-secondary-color-50">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0">
-                            <img src="assets/image/komunikasi.png" alt="">
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                            <h3><b>Komunikasi</b></h3>
-                            <p>Komunikasikan bersama kami untuk pengerjaan.</p>
-                        </div>
+                <div class="col py-4 px-3 bg-secondary-color-25 d-flex align-items-center justify-content-center">
+                    <div class="flex-grow-0 ms-3">
+                        <h3 class="h-3 montserrat font-size-18"><b>Komunikasi</b></h3>
+                        <p class="p-packages montserrat font-size-15">Komunikasikan bersama kami untuk pengerjaan.</p>
                     </div>
                 </div>
-                <div class="col-sm text-start p-5 bg-secondary-color-25">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0">
-                            <img src="assets/image/pembayaran.png" alt="">
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                            <h3><b>Pembayaran</b></h3>
-                            <p>Setelah pelunasan, pengerjaan akan segera di proses.</p>
-                        </div>
+                <div class="col py-4 px-3 bg-secondary-color-50 d-flex align-items-center justify-content-center">
+                    <div class="flex-grow-0 ms-3">
+                        <h3 class="h-3 montserrat font-size-18"><b>Pembayaran</b></h3>
+                        <p class="p-packages montserrat font-size-15">Setelah pelunasan, pengerjaan akan segera di proses.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+    
     </div>
 
+
     <main id="main">
-        <div class="container py-5 px-0">
-            <div class="information">
-                <h1 class="thick">Harga & Detail <br> Pengerjaan</h1>
-                <p class="mt-4">Pilih paket berdasarkan kebutuhan Anda, dengan pilihan 4 pilihan yang tersedia :</p>
+        <div class="container p-vertical-40 px-0" id="main-container">
+            <div class="information m-bot-24 text-center">
+                <h1 class="title play-fair"><b>Harga & Detail <br> Pengerjaan</b></h1>
+                <p class="detail m-top-24">Pilih paket berdasarkan kebutuhan Anda, dengan pilihan 4 pilihan yang tersedia</p>
             </div>
-            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-xxl-4 my-5 p-0" id="info-project">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xxl-4 p-0" id="info-project">
                 <div class="col mb-3">
                     <div class="card p-3">
                         <div class="card-body">
@@ -148,8 +126,7 @@
                             <p >Detail Ukuran 3D</p>
                             <p >Master File Desain</p>
                             <br>
-                            <a href="https://wa.me/6282140403332/?text=Ini+Adalah+Text+Pesan+Dari+nata-design.com+Hanya+Uji+Coba%0D%0ABaris+2%0D%0ABaris+3%0D%0A%0D%0AParagraf+Baru%0D%0A%0D%0AParagraf+Baru%0D%0A%0D%0A%2ATest+Bold%2A%0D%0A%0D%0A_Test+Italic_"
-                                target="_blank" class="btn btn-primary px-5"><b>MULAI PROJECT</b></a>
+                            <a href="" target="_blank" class="button-primary-md"><b>MULAI PROJECT</b></a>
                         </div>
                     </div>
                 </div>
@@ -179,8 +156,7 @@
                             <p >Detail Ukuran 3D</p>
                             <p >Master File Desain</p>
                             <br>
-                            <a href="https://wa.me/6282140403332/?text=Ini+Adalah+Text+Pesan+Dari+nata-design.com+Hanya+Uji+Coba%0D%0ABaris+2%0D%0ABaris+3%0D%0A%0D%0AParagraf+Baru%0D%0A%0D%0AParagraf+Baru%0D%0A%0D%0A%2ATest+Bold%2A%0D%0A%0D%0A_Test+Italic_"
-                                target="_blank" class="btn btn-primary px-5"><b>MULAI PROJECT</b></a>
+                            <a href="" target="_blank" class="button-primary-md"><b>MULAI PROJECT</b></a>
                         </div>
                     </div>
                 </div>
@@ -210,8 +186,7 @@
                             <p >Detail Ukuran 3D</p>
                             <p >Master File Desain</p>
                             <br>
-                            <a href="https://wa.me/6282140403332/?text=Ini+Adalah+Text+Pesan+Dari+nata-design.com+Hanya+Uji+Coba%0D%0ABaris+2%0D%0ABaris+3%0D%0A%0D%0AParagraf+Baru%0D%0A%0D%0AParagraf+Baru%0D%0A%0D%0A%2ATest+Bold%2A%0D%0A%0D%0A_Test+Italic_"
-                                target="_blank" class="btn btn-primary px-5"><b>MULAI PROJECT</b></a>
+                            <a href="" target="_blank" class="button-primary-md"><b>MULAI PROJECT</b></a>
                         </div>
                     </div>
                 </div>
@@ -238,14 +213,13 @@
                             <p >Detail Ukuran 3D</p>
                             <p >Master File Desain</p>
                             <br>
-                            <a href="https://wa.me/6282140403332/?text=Ini+Adalah+Text+Pesan+Dari+nata-design.com+Hanya+Uji+Coba%0D%0ABaris+2%0D%0ABaris+3%0D%0A%0D%0AParagraf+Baru%0D%0A%0D%0AParagraf+Baru%0D%0A%0D%0A%2ATest+Bold%2A%0D%0A%0D%0A_Test+Italic_"
-                                target="_blank" class="btn btn-primary px-5"><b>MULAI PROJECT</b></a>
+                            <a href="" target="_blank" class="button-primary-md"><b>MULAI PROJECT</b></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="information">
-                <p class="montserrat"><b><i>Jika Anda kesulitan dalam pemilihan, silahakan hubungi kami untuk konsultasi secara langsung.</i></b></p>
+            <div class="information m-top-40">
+                <p class="detail montserrat text-center"><b><i>Jika Anda kesulitan dalam pemilihan, silahakan hubungi kami untuk konsultasi secara langsung.</i></b></p>
             </div>
         </div>
     </main>
