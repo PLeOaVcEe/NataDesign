@@ -11,19 +11,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>NataDesign</title>
 </head>
 
 <body>
-    <div class="container-fluid p-0 content-primary pt-3">
+    <div class="container-fluid p-0 content-primary pt-3" id="landing-page">
         <div class="bg"></div>
-        <div class="container p-0">
-            <nav class="navbar navbar-expand-lg p-0" id="navbar">
+        <div class="container-sm p-0">
+            <nav class="navbar navbar-expand-md p-0" id="navbar">
                 <div class="container p-0" id="navbar-container">
                     <a class="navbar-brand" href="index.html">
                         <img src="assets/image/Logo.png" class="d-block mx-lg-auto img-fluid py-3 ps-3" alt="Bootstrap Themes" width="56"
@@ -52,52 +51,41 @@
             </nav>
         </div>
         <div class="container p-0">
-            <div class="row flex-lg-row-reverse align-items-center p-0">
-                <div class="col-10 col-sm-8 col-lg-6 ps-0 mx-0" id="img-heroes" style="position: relative;">
-                    <img src="assets/image/bg-heroes.png" class="mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                        width="700" height="500" loading="lazy">
-                    <div class="row" id="sosial">
-                        <div class="d-flex flex-column text-white">
-                            <div class="py-3">
-                                <i class="fab fa-facebook-f fa-lg"></i>
-                            </div>
-                            <div class="py-3">
-                                <i class="fab fa-instagram fa-lg"></i>
-                            </div>
-                            <div class="py-3">
-                                <i class="fab fa-whatsapp fa-lg"></i>
-                            </div>
-                        </div>
+            <div class="row flex-md-row align-items-center p-0" id="heroes">
+                <div class="col col-lg-6 d-flex flex-column justify-content-center py-0 mx-0" id="txt-heroes">
+                    <h1 class="mb-3 title text-white play-fair"><b>Build <br> Aesthetically.</b></h1>
+                    <p class="detail text-white">Provides an aesthetic for every building.</p>
+                    <div class="d-md-flex justify-content-md-start">
+                        <a id="scroll" href="#start-project" class="button-heroes text-primary-color"><b>Mulai Project</b></a>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex flex-column justify-content-center py-0 mx-0" id="txt-heroes">
-                    <h1 class="mb-3 thick text-white">Build Aesthetically.</h1>
-                    <p class="desc text-white">Provides an aesthetic for every building.</p>
-                    <div class="d-md-flex justify-content-md-start">
-                        <a id="scroll" href="#start-project" class="btn btn-secondary-heroes px-4 me-md-2 py-3"><b>Mulai Project</b></a>
-                    </div>
+                <div class="col-10 col-sm-8 col-md-7 col-lg-6 ps-0 mx-0" id="img-heroes">
+                    <img src="assets/image/bg-heroes.png" class="mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="row text-center">
+            <div class="row text-center text-white">
                 <div class="col p-5 bg-secondary-color d-flex align-items-center justify-content-center">
-                    <p class="m-0">Total Restorant & Café Terselesaikan</p>
+                    <p class="detail m-0">Total Restorant & Café Terselesaikan</p>
                 </div>
                 <div class="col p-5 bg-secondary-color-25 d-flex align-items-center justify-content-center">
-                    <p class="m-0">99 Project</p>
+                    <p class="detail m-0">99 Project</p>
                 </div>
                 <div class="col p-5 bg-secondary-color-50 d-flex align-items-center justify-content-center">
-                    <p class="m-0">Selengkapnya</p>
+                    <p class="detail m-0">Selengkapnya</p>
                 </div>
             </div>
         </div>
     </div>
 
     <main>
-        <div class="container mt-3 py-0 image-slider">
-            <h1 class="thick mb-3">Project Terselesaikan</h1>
+        <div class="container image-slider m-top-40 m-bot-24">
+            <h1 class="play-fair title m-bot-24 text-primary-color"><b>Project <br> Terselesaikan</b></h1>
+            <div class="m-bot-24" id="selengkapnya1">
+                <a class="text-dark font-size-15 montserrat" href="portofolio.html" style="text-decoration: none;">Selengkapnya &#x2192;</a>
+            </div>
             <div id="slide">
                 <img src="assets/image/1.png" alt="" class="img-fluid" style="height: 330px;width: 330px; margin: 0 8px 0 0;">
                 <img src="assets/image/2.png" alt="" class="img-fluid" style="height: 330px;width: 330px; margin: 0 8px 0;">
@@ -108,94 +96,88 @@
                 <img src="assets/image/3.png" alt="" class="img-fluid" style="height: 330px;width: 330px; margin: 0 8px 0;">
                 <img src="assets/image/4.png" alt="" class="img-fluid" style="height: 330px;width: 330px; margin: 0 0 0 8px;">
             </div>
-            <div class="my-3">
-                <a class="mx-0 text-dark" href="portofolio.html" style="text-decoration: none; font-size: 24px; "><b>Selengkapnya  &#x2192; </b></a>
+            <div class="m-vertical-24 m-left-40" id="selengkapnya2">
+                <a class="text-dark font-size-15 montserrat" href="portofolio.html" style="text-decoration: none;">Selengkapnya
+                    &#x2192;</a>
             </div>
         </div>
 
-        <div class="container mt-3" id="start-project">
+        <div class="container" id="start-project">
             <div class="row text-center text-white bg-heroes">
-                <div class="col-lg-6 mx-auto">
-                    <h1 class="display-5 fw-bold">Pilihan Paket</h1>
-                    <p class="lead mb-4">Pilih paket berdasarkan kebutuhan Anda, dengan pilihan Basic Package dan juga
-                        Advance
-                        Package.</p>
+                <div class="col mx-auto">
+                    <h1 class="title"><b>Pilihan Paket</b></h1>
+                    <p class="detail">Pilih paket berdasarkan kebutuhan Anda, dengan pilihan Basic Package dan juga Advance Package.</p>
                 </div>
             </div>
         </div>
 
-        <div class="container p-0 mb-5" id="options">
-            <div class="card-group">
-                <div class="card m-0 card-background-none px-5">
-                    <div class="card-body py-5 px-1 text-primary-color">
-                        <h3 class="card-title thick"><strong>Basic Package</strong></h3>
-                        <p class="card-text mb-0 mt-4">Untuk Anda yang ingin dan memiliki :</p>
-                        <ul class="p-3" style="line-height: 220%;">
-                            <li>Memulai bisnis baru</li>
-                            <li>Membuka outlet cabang</li>
-                            <li>Mengutamakan branding</li>
-                            <li>Memdesain ulang outlet</li>
-                            <li>Memiliki luas outlet 10m2 s/d 60m2</li>
-                            <li>Untuk Anda yang yang ingin membuka
-                                outlet booth, kios, hingga ruko 2 lantai</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn btn-primary px-5 py-4" href="basic.html">Selengkapnya</a>
+        <div class="container px-0" id="options">
+            <div class="card-group p-bot-40">
+                <div class="card py-0 m-0 card-background-none">
+                    <div class="card-body m-vertical-40 text-primary-color text-center" style="position: relative;">
+                        <h1 class="font-size-24 m-bot-24"><b>Basic Package</b></h1>
+                        <p>Untuk Anda yang ingin dan memiliki :</p>
+                        <p>Memulai bisnis baru</p>
+                        <p>Membuka outlet cabang</p>
+                        <p>Mengutamakan branding</p>
+                        <p>Memdesain ulang outlet</p>
+                        <p>Memiliki luas outlet 10m2 s/d 60m2</p>
+                        <p>Untuk Anda yang yang ingin membuka outlet booth, kios, hingga ruko 2 lantai</p>
+                        <a class="btn-detail button-primary m-top-24" href="basic.html"><b>Selengkapnya</b></a>
                     </div>
                 </div>
-                <div class="card m-0 card-background-none px-5">
-                    <div class="card-body py-5 px-1 text-primary-color">
-                        <h3 class="card-title thick"><strong>Advance Package</strong></h3>
-                        <p class="card-text mb-0 mt-4">Untuk Anda yang ingin dan memiliki :</p>
-                        <ul class="p-3" style="line-height: 220%;">
-                            <li>Membuat desain Utama untuk outlet yang akan difranchisekan</li>
-                            <li>Merencakanan inverstasi capex awal</li>
-                            <li>Bersaing dengan outlet sederajat</li>
-                            <li>Menyesuaikan kebutuan operasional harian</li>
-                            <li>Memiliki luas outlet 60m2 s/d 400m2 keatas</li>
-                            <li>Ruko 2 lantai sampai dengan stand alone big store</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn btn-primary px-5 py-4" href="advance.html">Selengkapnya</a>
+                <div class="card py-0 m-0 card-background-none">
+                    <div class="card-body m-vertical-40 text-primary-color text-center" style="position: relative;">
+                        <h3 class="font-size-24 m-bot-24"><b>Advance Package</b></h3>
+                        <p>Untuk Anda yang ingin dan memiliki :</p>
+                        <p>Membuat desain Utama untuk outlet yang akan difranchisekan</p>
+                        <p>Merencakanan inverstasi capex awal</p>
+                        <p>Bersaing dengan outlet sederajat</p>
+                        <p>Menyesuaikan kebutuan operasional harian</p>
+                        <p>Memiliki luas outlet 60m2 s/d 400m2 keatas</p>
+                        <p>Ruko 2 lantai sampai dengan stand alone big store</p>
+                        <a class="btn-detail button-primary m-top-24" href="advance.html"><b>Selengkapnya</b></a>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="container-fluid p-0 my-0" id="options2">
-            <div class="d-flex flex-column bd-highlight text-center ">
-                <div class="py-5 px-2 bd-highlight text-primary-color">
-                    <h3 class="card-title thick mb-5"><strong>Basic Package</strong></h3>
-                    <p>Untuk Anda yang ingin dan memiliki :</p>
-                    <p>Memulai bisnis baru</p>
-                    <p>Membuka outlet cabang</p>
-                    <p>Mengutamakan branding</p>
-                    <p>Memdesain ulang outlet</p>
-                    <p>Memiliki luas outlet 10m2 s/d 60m2</p>
-                    <p>Untuk Anda yang yang ingin membuka</p>
-                    <p>outlet booth, kios, hingga ruko 2 lantai.</p>
-                    <a class="btn btn-primary px-5 py-4 mt-5" href="basic.html"><b>Selengkapnya</b></a>
+            <div class="d-flex flex-column text-center ">
+                <div class="py-5 px-2 text-primary-color">
+                    <h3 class="card-title font-size-24 m-bot-24"><strong>Basic Package</strong></h3>
+                    <div class="detail">
+                        <p>Untuk Anda yang ingin dan memiliki :</p>
+                        <p>Memulai bisnis baru</p>
+                        <p>Membuka outlet cabang</p>
+                        <p>Mengutamakan branding</p>
+                        <p>Memdesain ulang outlet</p>
+                        <p>Memiliki luas outlet 10m2 s/d 60m2</p>
+                        <p>Untuk Anda yang yang ingin membuka</p>
+                        <p>outlet booth, kios, hingga ruko 2 lantai.</p>
+                    </div>
+                    <a class="button-primary text-primary-color" href="basic.html"><b>Selengkapnya</b></a>
                 </div>
                 <div class="py-5 px-2 bd-highlight content-primary2 text-white">
-                    <h3 class="card-title thick mb-5"><strong>Advance Package</strong></h3>
-                    <p>Untuk Anda yang ingin dan memiliki :</p>
-                    <p>Membuat desain Utama untuk outlet yang akan difranchisekan</p>
-                    <p>Merencakanan inverstasi capex awal</p>
-                    <p>Bersaing dengan outlet sederajat</p>
-                    <p>Menyesuaikan kebutuan operasional harian</p>
-                    <p>Memiliki luas outlet 60m2 s/d 400m2 keatas</p>
-                    <p>Ruko 2 lantai sampai dengan stand alone big store</p>
-                    <a class="btn btn-secondary px-5 py-4 mt-5 text-primary-color" href="advance.html"><b>Selengkapnya</b></a>
+                    <h3 class="card-title font-size-24 m-bot-24"><strong>Advance Package</strong></h3>
+                    <div class="detail">
+                        <p>Untuk Anda yang ingin dan memiliki :</p>
+                        <p>Membuat desain Utama untuk outlet yang akan difranchisekan</p>
+                        <p>Merencakanan inverstasi capex awal</p>
+                        <p>Bersaing dengan outlet sederajat</p>
+                        <p>Menyesuaikan kebutuan operasional harian</p>
+                        <p>Memiliki luas outlet 60m2 s/d 400m2 keatas</p>
+                        <p>Ruko 2 lantai sampai dengan stand alone big store</p>
+                    </div>
+                    <a class="button-secondary text-primary-color" href="advance.html"><b>Selengkapnya</b></a>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid pt-3 content-white">
-            <div class="container pt-5">
-                <h1 class="thick text-center">Apa kata mereka?</h1>
-                <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="container-fluid content-white">
+            <div class="container p-vertical-40">
+                <h1 class="title text-center text-primary-color play-fair m-bot-40"><b>Apa Kata Mereka?</b></h1>
+                <div id="carouselExampleCaptions" class="carousel carousel-dark slide mx-0" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -366,10 +348,10 @@
             </div>
         </div>
 
-        <div class="container-fluid py-5 content-white">
+        <div class="container-fluid content-white p-bot-40">
             <div class="container text-center">
-                <h1 class="thick">Client Kami</h1>
-                <div class="row row-cols-lg-4 row-cols-sm-2 justify-content-center py-5 my-5">
+                <h1 class="title text-primary-color play-fair m-bot-40"><b> Client Kami </b></h1>
+                <div class="row row-cols-lg-4 row-cols-sm-2 justify-content-center">
                     <div class="col mb-3">
                         <img src="assets/image/client-1.png" style="height: 144px; width: 144px;" alt="" class="m-4">
                     </div>
