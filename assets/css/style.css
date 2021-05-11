@@ -49,6 +49,12 @@ body::-webkit-scrollbar-thumb {
   /* creates padding around scroll thumb */
 }
 
+.img-slider {
+  height: auto;
+  width: 330px;
+  margin: 0 8px 0 0;
+}
+
 .m-top-24 {
   margin-top: 24px;
 }
@@ -242,6 +248,7 @@ p.detail {
   background-color: #26554a;
   text-decoration: none;
   color: #ffffff;
+  width: 100%;
 }
 
 .button-primary-md:hover {
@@ -258,6 +265,10 @@ p.detail {
   padding-right: 34px;
   background-color: #fff1e4;
   text-decoration: none;
+  color: #26554a;
+}
+
+.button-secondary:hover {
   color: #26554a;
 }
 
@@ -546,6 +557,29 @@ img.hover-shadow {
   height: auto;
 }
 
+.fa {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.fa:visited {
+  color: #ffffff;
+}
+
+#info-project p {
+  font-size: 12px;
+}
+
+#info-project h5 {
+  font-size: 15px;
+}
+
+#info-project .d-flex {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
 @media only screen and (max-width: 1919.98px) {
   .image-slider {
     padding-left: 0;
@@ -556,10 +590,53 @@ img.hover-shadow {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  #info-project {
-    margin-right: 0;
-    margin-left: 0;
+@media only screen and (max-width: 1399.98px) {
+  #info-project .card-body {
+    text-align: start;
+  }
+  #info-project p {
+    text-align: start;
+    font-size: 12px;
+  }
+  #info-project .d-flex {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .information {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
+@media only screen and (max-width: 1200.98px) {
+  #info-project .card-body {
+    text-align: start;
+  }
+  #info-project p {
+    text-align: start;
+  }
+  #info-project .d-flex {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .button-primary-md {
+    font-size: 12px;
+  }
+}
+
+#img-heroes {
+  width: 700;
+  height: 100%;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+}
+
+@media only screen and (max-width: 991.98px) {
+  .img-slider {
+    height: auto;
+    width: 260px;
   }
   #info-project .card-body {
     text-align: center;
@@ -572,20 +649,6 @@ img.hover-shadow {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .information {
-    padding-right: 12px;
-    padding-left: 12px;
-  }
-}
-
-#img-heroes {
-  width: 700;
-  height: 100%;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
-}
-
-@media only screen and (max-width: 991.98px) {
   #img-heroes {
     width: 344px;
     height: 100%;
@@ -621,6 +684,9 @@ img.hover-shadow {
   .preview-img {
     width: 100%;
     height: auto;
+  }
+  .button-primary-md {
+    width: auto;
   }
   .content-primary {
     position: relative;
@@ -696,6 +762,18 @@ img.hover-shadow {
   #navbar-container2 .text-primary-color {
     color: #ffffff;
   }
+  #options {
+    display: none;
+  }
+  #options2 {
+    display: block;
+  }
+  #selengkapnya1 {
+    display: none;
+  }
+  #selengkapnya2 {
+    display: block;
+  }
   #landing-page {
     height: 100%;
   }
@@ -729,6 +807,7 @@ img.hover-shadow {
 
 @media only screen and (max-width: 575.98px) {
   #heroes {
+    margin: 0;
     height: 40vh;
   }
   #heroes-packages {
@@ -748,18 +827,7 @@ img.hover-shadow {
   }
   #txt-heroes {
     padding-left: 40px;
-  }
-  #options {
-    display: none;
-  }
-  #options2 {
-    display: block;
-  }
-  #selengkapnya1 {
-    display: none;
-  }
-  #selengkapnya2 {
-    display: block;
+    padding-right: 40px;
   }
   .bg-heroes {
     background-position: 50%;
