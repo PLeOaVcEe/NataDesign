@@ -13,13 +13,6 @@ body {
   overflow-x: hidden;
 }
 
-#whatsapp {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 10000;
-}
-
 body::-webkit-scrollbar {
   width: 9px;
   /* width of the entire scrollbar */
@@ -303,6 +296,13 @@ p.detail {
 
 .card-background-primary {
   background: #26554a;
+}
+
+#whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10000;
 }
 
 .navbar {

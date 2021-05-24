@@ -35,16 +35,6 @@ body {
   font-family: $primary-font;
   overflow-x: hidden;
 }
-
-//whatsapp
-
-#whatsapp {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 10000;
-}
-
 //scroll bar
 
 body::-webkit-scrollbar {
@@ -332,6 +322,15 @@ p.detail {
 
 .card-background-primary {
   background: $primary-color;
+}
+
+//whatsapp
+
+#whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10000;
 }
 
 //navigation
