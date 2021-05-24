@@ -1,6 +1,6 @@
 var smoothScroll = function(elementId) {
-    var MIN_PIXELS_PER_STEP = 16;
-    var MAX_SCROLL_STEPS = 30;
+    var MIN_PIXELS_PER_STEP = 1;
+    var MAX_SCROLL_STEPS = 90;
     var target = document.getElementById(elementId);
     var scrollContainer = target;
     do {
@@ -20,11 +20,9 @@ var smoothScroll = function(elementId) {
     var stepFunc = function() {
         scrollContainer.scrollTop =
             Math.min(targetY, pixelsPerStep + scrollContainer.scrollTop);
-
         if (scrollContainer.scrollTop >= targetY) {
             return;
         }
-
         window.requestAnimationFrame(stepFunc);
     };
 
