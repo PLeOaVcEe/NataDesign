@@ -13,6 +13,13 @@ body {
   overflow-x: hidden;
 }
 
+#whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10000;
+}
+
 body::-webkit-scrollbar {
   width: 9px;
   /* width of the entire scrollbar */
@@ -200,7 +207,7 @@ h1.title {
 }
 
 p.detail {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .button-heroes {
@@ -580,6 +587,10 @@ img.hover-shadow {
           justify-content: start;
 }
 
+.fix {
+  font-size: 24px;
+}
+
 @media only screen and (max-width: 1919.98px) {
   .image-slider {
     padding-left: 0;
@@ -606,6 +617,9 @@ img.hover-shadow {
   .information {
     padding-right: 12px;
     padding-left: 12px;
+  }
+  .bg-heroes {
+    background-position: 50%;
   }
 }
 
@@ -688,6 +702,9 @@ img.hover-shadow {
   }
   h1.title {
     font-size: clamp(30px, 6.27vw, 48px);
+  }
+  p.detail {
+    font-size: 15px;
   }
   .button-primary-md {
     width: auto;
@@ -831,8 +848,8 @@ img.hover-shadow {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .bg-heroes {
-    background-position: 50%;
+  .fix {
+    font-size: 15px;
   }
 }
 

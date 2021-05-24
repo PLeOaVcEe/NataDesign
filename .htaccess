@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^home index.html [QSA]
+RewriteRule ^about about.html [QSA]
+RewriteRule ^portofolio portofolio.html [QSA]
+RewriteRule ^basic basic.html [QSA]
+RewriteRule ^advance advance.html [QSA]

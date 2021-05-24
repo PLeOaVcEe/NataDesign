@@ -15,17 +15,28 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/image/favicon.svg">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2T2VQZT0GD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2T2VQZT0GD');
+    </script>
+
     <title>NataDesign</title>
 </head>
 
-<body>
-    
+<body style="position: relative;">
     <div class="container-fluid p-0 content-primary pt-3" id="landing-package">
         <div class="bg-packages"></div>
         <div class="container-sm p-0" id="container-sm-navbar">
             <nav class="navbar navbar-expand-lg p-0" id="navbar">
                 <div class="container-fluid p-0" id="navbar-container">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="home">
                         <img src="assets/image/Logo.png" class="d-block mx-lg-auto img-fluid py-3 ps-3"
                             alt="Bootstrap Themes" width="56" height="52" loading="lazy">
                     </a>
@@ -38,14 +49,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item mx-3">
-                                <a class="nav-link active text-white" aria-current="page"
-                                    href="index.html"><b>Beranda</b></a>
+                                <a class="nav-link active text-white" aria-current="page" href="home"><b>Beranda</b></a>
                             </li>
                             <li class="nav-item mx-3">
-                                <a class="nav-link text-white" href="about.html"><b>Tentang</b></a>
+                                <a class="nav-link text-white" href="about"><b>Tentang</b></a>
                             </li>
                             <li class="nav-item mx-3">
-                                <a class="nav-link text-white" href="portofolio.html"><b>Portofolio</b></a>
+                                <a class="nav-link text-white" href="portofolio"><b>Portofolio</b></a>
                             </li>
                         </ul>
                     </div>
@@ -67,21 +77,21 @@
         </div>
         <div class="container" id="packages-info">
             <div class="row row-cols-md-3 text-center text-white">
-                <div class="col py-4 px-3 bg-secondary-color d-flex align-items-center justify-content-center">
-                    <div class="flex-grow-0 ms-3">
+                <div class="col-6 col-sm-6 col-md py-4 px-3 bg-secondary-color d-flex align-items-center justify-content-center">
+                    <div class="flex-grow-0 mx-3">
                         <h3 class="h-3 montserrat font-size-18"><b>Pilih</b></h3>
                         <p class="p-packages montserrat font-size-15">Pelajari Pilihan Anda dan pilih berdasarkan kebutuhan
                             Anda.</p>
                     </div>
                 </div>
-                <div class="col py-4 px-3 bg-secondary-color-25 d-flex align-items-center justify-content-center">
-                    <div class="flex-grow-0 ms-3">
+                <div class="col-6 col-sm-6 col-md py-4 px-3 bg-secondary-color-25 d-flex align-items-center justify-content-center">
+                    <div class="flex-grow-0 mx-3">
                         <h3 class="h-3 montserrat font-size-18"><b>Komunikasi</b></h3>
                         <p class="p-packages montserrat font-size-15">Komunikasikan bersama kami untuk pengerjaan.</p>
                     </div>
                 </div>
-                <div class="col py-4 px-3 bg-secondary-color-50 d-flex align-items-center justify-content-center">
-                    <div class="flex-grow-0 ms-3">
+                <div class="col col-sm col-md py-4 px-3 bg-secondary-color-50 d-flex align-items-center justify-content-center">
+                    <div class="flex-grow-0 mx-3">
                         <h3 class="h-3 montserrat font-size-18"><b>Pembayaran</b></h3>
                         <p class="p-packages montserrat font-size-15">Setelah pelunasan, pengerjaan akan segera di proses.
                         </p>
@@ -104,7 +114,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title mb-3"><b>Elite</b></h5>
-                            <div class="d-flex flex-row bd-highlight">
+                            <div class="d-flex flex-row bd-highlight mb-3">
                                 <div class="bd-highlight">
                                     <b>Rp.</b>
                                 </div>
@@ -115,6 +125,7 @@
                                     <b>JT</b>
                                 </div>
                             </div>
+                            <h1 class="mb-3 font-size-24"><b><s>Rp. 12.000.000</s></b></h1>
                             <hr class="my-4">
                             <p >Pilihan Arsitek : 25 Arsitek</p>
                             <p >Arsitek Terpilih : 3 Arsitek</p>
@@ -134,7 +145,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title mb-3"><b>Pro</b></h5>
-                            <div class="d-flex flex-row bd-highlight">
+                            <div class="d-flex flex-row bd-highlight mb-3">
                                 <div class="bd-highlight">
                                     <b>Rp.</b>
                                 </div>
@@ -145,6 +156,7 @@
                                     <b>JT</b>
                                 </div>
                             </div>
+                            <h1 class="mb-3 font-size-24"><b><s>Rp. 12.000.000</s></b></h1>
                             <hr class="my-4">
                             <p>Pilihan Arsitek : 25 Arsitek</p>
                             <p >Arsitek Terpilih : 3 Arsitek</p>
@@ -164,7 +176,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title mb-3"><b>Master</b></h5>
-                            <div class="d-flex flex-row bd-highlight">
+                            <div class="d-flex flex-row bd-highlight mb-3">
                                 <div class="bd-highlight">
                                     <b>Rp.</b>
                                 </div>
@@ -175,6 +187,7 @@
                                     <b>JT</b>
                                 </div>
                             </div>
+                            <h1 class="mb-3 font-size-24"><b><s>Rp. 12.000.000</s></b></h1>
                             <hr class="my-4">
                             <p >Pilihan Arsitek : 25 Arsitek</p>
                             <p >Arsitek Terpilih : 2 Arsitek</p>
@@ -194,14 +207,15 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title mb-3"><b>Legend</b></h5>
-                            <div class="d-flex flex-row bd-highlight">
+                            <div class="d-flex flex-row bd-highlight mb-3">
                                 <div class="bd-highlight px-1" style="font-size: 48px; line-height: 45px;">
-                                    150
+                                    90K
                                 </div>
                                 <div class="align-self-end">
                                     <b>/m<sup>2</sup></b>
                                 </div>
                             </div>
+                            <h1 class="mb-3 font-size-24"><b><s>Rp. 12.000.000</s></b></h1>
                             <hr class="my-4">
                             <p >Pilihan Arsitek : 25 Arsitek</p>
                             <p >Arsitek Terpilih : 1 Arsitek</p>
@@ -228,8 +242,8 @@
         <div class="container">
             <div class="d-flex flex-row flex-wrap p-2 bd-highlight text-center">
                 <div class="p-2 flex-fill bd-highlight text-start">
-                    <p class="footer">0812 3456 7890</p>
-                    <p class="footer">nat.adesign@gmail.com</p>
+                    <p class="footer">0821 4040 3332</p>
+                    <p class="footer">aeollabi@natadesign.id</p>
                     <p class="footer">Jl. Kol. Yusudarso No. 30F, Medan</p>
                 </div>
                 <div class="p-2 flex-fill bd-highlight text-start">
@@ -250,8 +264,8 @@
         <div class="container">
             <div class="d-flex flex-column flex-wrap p-2 bd-highlight text-center">
                 <div class="p-2 flex-fill bd-highlight">
-                    <p class="footer">0812 3456 7890</p>
-                    <p class="footer">nat.adesign@gmail.com</p>
+                    <p class="footer">0821 4040 3332</p>
+                    <p class="footer">aeollabi@natadesign.id</p>
                     <p class="footer">Jl. Kol. Yusudarso No. 30F, Medan</p>
                 </div>
                 <div class="p-2 flex-fill bd-highlight">
@@ -268,6 +282,11 @@
             </div>
         </div>
     </footer>
+
+    <div id="whatsapp">
+        <a href="https://wa.me/6282140403332" target="_blank"><img src="assets/image/whatsapp.svg" width="60px"
+                height="60px" alt=""></a>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
