@@ -599,6 +599,9 @@ img.hover-shadow {
   #txt-heroes {
     line-height: 1.6;
   }
+  h1.title {
+    font-size: clamp(30px, 2.9vw, 48px);
+  }
 }
 
 @media only screen and (max-width: 1399.98px) {
@@ -694,14 +697,14 @@ img.hover-shadow {
   #options .card-body p {
     font-size: 12px;
   }
+  .fix {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 767.98px) {
   #container-portfolio h1.title {
     text-align: center;
-  }
-  h1.title {
-    font-size: clamp(30px, 6.27vw, 48px);
   }
   p.detail {
     font-size: 15px;
@@ -797,7 +800,7 @@ img.hover-shadow {
     height: 100%;
   }
   #heroes {
-    height: 60vh;
+    height: 80vh;
   }
   #heroes #img-heroes {
     display: none;
@@ -827,7 +830,7 @@ img.hover-shadow {
 @media only screen and (max-width: 575.98px) {
   #heroes {
     margin: 0;
-    height: 40vh;
+    height: 60vh;
   }
   #heroes-packages {
     height: 40vh;
@@ -848,43 +851,40 @@ img.hover-shadow {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .fix {
-    font-size: 15px;
-  }
 }
 
 @media only screen and (max-width: 557.98px) {
   #heroes {
     margin: 0;
-    height: 60vh;
+    height: 90vh;
   }
 }
 
 @media only screen and (max-width: 478.98px) {
   #heroes {
     margin: 0;
-    height: 58vh;
+    height: 90vh;
   }
 }
 
 @media only screen and (max-width: 411.98px) {
   #heroes {
     margin: 0;
-    height: 46vh;
+    height: 90vh;
   }
 }
 
 @media only screen and (max-width: 411.98px) {
   #heroes {
     margin: 0;
-    height: 46vh;
+    height: 90vh;
   }
 }
 
 @media only screen and (max-width: 360.98px) {
   #heroes {
     margin: 0;
-    height: 38vh;
+    height: 90vh;
   }
   #heroes-packages {
     height: 38vh;
