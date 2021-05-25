@@ -1,6 +1,6 @@
 var smoothScroll = function(elementId) {
-    var MIN_PIXELS_PER_STEP = 30;
-    var MAX_SCROLL_STEPS = 60;
+    var MIN_PIXELS_PER_STEP = 16;
+    var MAX_SCROLL_STEPS = 30;
     var target = document.getElementById(elementId);
     var scrollContainer = target;
     do {
