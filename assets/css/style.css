@@ -272,6 +272,10 @@ p.detail {
   color: #26554a;
 }
 
+h1.promo {
+  font-size: 24px;
+}
+
 .card {
   background: none;
   border-width: 1px;
@@ -640,6 +644,9 @@ img.hover-shadow {
   }
   .button-primary-md {
     font-size: 12px;
+  }
+  h1.promo {
+    font-size: 18px;
   }
 }
 

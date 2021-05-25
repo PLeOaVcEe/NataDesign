@@ -294,6 +294,12 @@ p.detail {
   color: $primary-color;
 }
 
+//promo
+
+h1.promo {
+  font-size: $size24;
+}
+
 //Card
 
 .card {
@@ -653,6 +659,10 @@ img.hover-shadow {
   }
   .button-primary-md {
     font-size: $size12;
+  }
+
+  h1.promo {
+    font-size: $size18;
   }
 }
 
