@@ -196,7 +196,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1.title {
-  font-size: 2rem;
+  font-size: 48px;
 }
 
 p.detail {
@@ -593,6 +593,12 @@ img.hover-shadow {
 
 .fix {
   font-size: 24px;
+}
+
+@media only screen and (min-width: 1920.98px) {
+  h1.title {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (max-width: 1919.98px) {
