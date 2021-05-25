@@ -199,6 +199,10 @@ h1.title {
   font-size: 48px;
 }
 
+h1.title-packages {
+  font-size: 48px;
+}
+
 p.detail {
   font-size: 1.5rem;
 }
@@ -595,12 +599,6 @@ img.hover-shadow {
   font-size: 24px;
 }
 
-@media only screen and (min-width: 1920.98px) {
-  h1.title {
-    font-size: 3rem;
-  }
-}
-
 @media only screen and (max-width: 1919.98px) {
   .image-slider {
     padding-left: 0;
@@ -758,6 +756,9 @@ img.hover-shadow {
 @media only screen and (max-width: 767.98px) {
   #container-portfolio h1.title {
     text-align: center;
+  }
+  h1.title-packages {
+    font-size: 30px;
   }
   p.detail {
     font-size: 15px;
