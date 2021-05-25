@@ -673,6 +673,55 @@ img.hover-shadow {
 }
 
 @media only screen and (max-width: 991.98px) {
+  //index
+
+  #options {
+    display: none;
+  }
+  #options2 {
+    display: block;
+  }
+
+  #selengkapnya1 {
+    display: none;
+  }
+
+  #selengkapnya2 {
+    display: block;
+  }
+
+  #landing-page {
+    height: 100%;
+  }
+
+  #heroes {
+    height: 80vh;
+    #img-heroes {
+      display: none;
+    }
+  }
+
+  .content-primary {
+    position: relative;
+    background: #000;
+    z-index: 1;
+  }
+
+  .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../image/bg-heroes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+    height: 100%;
+    width: 100%;
+  }
+
   .img-slider {
     height: auto;
     width: 260px;
@@ -744,12 +793,6 @@ img.hover-shadow {
 
   .button-primary-md {
     width: auto;
-  }
-
-  .content-primary {
-    position: relative;
-    background: #000;
-    z-index: 1;
   }
 
   //packages
@@ -836,49 +879,6 @@ img.hover-shadow {
     .text-primary-color {
       color: $white-color;
     }
-  }
-
-  //index
-
-  #options {
-    display: none;
-  }
-  #options2 {
-    display: block;
-  }
-
-  #selengkapnya1 {
-    display: none;
-  }
-
-  #selengkapnya2 {
-    display: block;
-  }
-
-  #landing-page {
-    height: 100%;
-  }
-
-  #heroes {
-    height: 80vh;
-    #img-heroes {
-      display: none;
-    }
-  }
-
-  .bg {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url("../image/bg-heroes.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.75;
-    height: 100%;
-    width: 100%;
   }
 
   #footer1 {
