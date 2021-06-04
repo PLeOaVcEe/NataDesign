@@ -19,4 +19,3 @@ var smoothScroll = function(elementId) {
         behavior: 'smooth' 
     });
 }
-
